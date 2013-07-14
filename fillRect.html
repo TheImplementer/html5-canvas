@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta content="UTF-8" />
+        <title>First page using HTML5 canvas</title>
+        <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#000000";
+            ctx.fillRect(0, 0, 500, 500);
+        });
+        </script>
+    <head>
+    <body>
+        <div style="position: absolute; top: 50px; left: 50px;">
+            <canvas id="myCanvas" width="500" height="500">
+            Your browser does not support HTML5 canvas element.
+            </canvas>
+        </div>
+    </body>
+</html>
